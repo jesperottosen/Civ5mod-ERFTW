@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{f413d59f-afc2-4819-a7ea-40157745863e}</ProjectGuid>
+    <Name>Explore Ruins for the Win</Name>
+    <Guid>05ba5a6f-a622-4bf4-b56c-61c7bec6b265</Guid>
+    <ModVersion>1</ModVersion>
+    <Stability>Alpha</Stability>
+    <Teaser>Archaological sites act as goody huts. Goody huts abundant.</Teaser>
+    <Description>Explore Ruins for the win (ERFTW) is about exploring the map and capturing the boosted goody huts and ancient ruins. 
+The good huts are appearing double as much too, so should Ancient ruins.
+
+[NEWLINE]
+[NEWLINE][ICON_BULLET] Any unit can pick up early goody huts
+[NEWLINE][ICON_BULLET] Explorers are the only one to explore Ancient Ruins.
+[NEWLINE][ICON_BULLET] There is an elemt of randomness to it, so it may take a few tries/turns to explore an Ancient ruin. 
+[NEWLINE][ICON_BULLET] Explorers eventually upgrade to great war infantry.
+[NEWLINE][ICON_BULLET] Archaologist have been removed as well as all references to landmarks and dig sites.
+[NEWLINE][ICON_BULLET] Be aware that AI players can use these too!
+
+[NEWLINE]
+[NEWLINE]Options are:
+[NEWLINE][ICON_BULLET] Settler 
+[NEWLINE][ICON_BULLET] Scout (goody huts only)
+[NEWLINE][ICON_BULLET] Tech boost (Artifact only)
+[NEWLINE][ICON_BULLET] 250 gold
+[NEWLINE][ICON_BULLET] 200 Culture (Goody huts only)
+[NEWLINE][ICON_BULLET] Expanded map reveal (Goody huts only)
+[NEWLINE][ICON_BULLET] Experience boost (Artifacts only)
+[NEWLINE][ICON_BULLET] Unit upgrades
+[NEWLINE]These options are scaled based on game difficulty.
+
+[NEWLINE]
+[NEWLINE]It includes:
+[NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]Units - Starting Scout (v 1)[ENDCOLOR] by Bloublou
+[NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]More Goody Hut (v 9)[ENDCOLOR] by Loner Yound
+[NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]Units - Scout to Explorer (v 10)[ENDCOLOR] by Bloublou
+[NEWLINE]It can be played with "Promotions - Ancient Ruins Choice" by Bloublou2</Description>
+    <Authors>yepzer</Authors>
+    <SpecialThanks>Bloublou, Loner Yound, William Howard, Tomatekh</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Explore Ruins for the Win</AssemblyName>
+    <RootNamespace>Explore Ruins for the Win</RootNamespace>
+    <ModReferences />
+    <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
+    <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
+    <ModDependencies>
+      <Association xmlns="">
+        <Type>Dlc</Type>
+        <Name>Expansion 2 - Brave New World</Name>
+        <Id>6DA07636-4123-4018-B643-6575B4EC336B</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+    <ModBlockers>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Units - Scout to Explorer</Name>
+        <Id>705d2254-692e-43fa-a502-dec5ed7ecb94</Id>
+        <MinVersion>10</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Units - Starting Scout</Name>
+        <Id>00a28291-c503-4edf-8d76-0da4f86669d2</Id>
+        <MinVersion>1</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>More Goody Hut</Name>
+        <Id>add4f1cb-5675-4011-be66-e318748c7ef4</Id>
+        <MinVersion>9</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModBlockers>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="README.md">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>
