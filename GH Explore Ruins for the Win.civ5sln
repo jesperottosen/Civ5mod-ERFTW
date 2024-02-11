@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # ModBuddy Solution File, Format Version 11.00
-Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "Explore Ruins for the Win", "Explore Ruins for the Win.civ5proj", "{F413D59F-AFC2-4819-A7EA-40157745863E}"
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "GH Explore Ruins for the Win", "GH Explore Ruins for the Win.civ5proj", "{F413D59F-AFC2-4819-A7EA-40157745863E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

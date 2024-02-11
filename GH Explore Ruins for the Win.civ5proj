@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{f413d59f-afc2-4819-a7ea-40157745863e}</ProjectGuid>
-    <Name>Explore Ruins for the Win</Name>
+    <Name>GH Explore Ruins for the Win</Name>
     <Guid>05ba5a6f-a622-4bf4-b56c-61c7bec6b265</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Alpha</Stability>
@@ -96,10 +96,17 @@ The good huts are appearing double as much too, so should Ancient ruins.
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="LUA\ERFTW_ExploreArtifacts.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="README.md">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LUA" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>

@@ -2,7 +2,14 @@
 
 ## Installation
 
-## Mod description
+## Mod Design
+The goody hut part of this mod is straight forward based on XML from existing mods by **Bloublou** and **Loner Yound**. 
+Initially it included **Ancient Ruins Choice** too, but as the Artifact bonus currently is not selected, but random - I opted for the goody huts to be random too.
+
+After some failed experiments with a BUILD_ARTIFACT and IMPROVEMENT_EXPLORATION for EXPLORERS that would trigger the LUA GoodyHuts API the current LUA Starts from GameEvents.UnitSetXY. 
+For better perfromance it exits if the situaion is not valid wrt Unit type and ressource type.
+
+## Mod Description
 Explore Ruins for the win (**ERFTW**) is about exploring the map and capturing the boosted goody huts and ancient ruins. 
 The good huts are appearing double as much too, so should Ancient ruins.
 
@@ -27,5 +34,5 @@ These options are scaled based on game difficulty.
 It includes:
 - Units - Starting Scout (v 1) by Bloublou
 - More Goody Hut (v 9) by Loner Yound
-- Units - Scout to Explorer (v 10) by Bloublou2 
-It can be played with "Promotions - Ancient Ruins Choice" by Bloublou2 
+- Units - Scout to Explorer (v 10) by Bloublou 
+It can be played with "Promotions - Ancient Ruins Choice" by Bloublou 
