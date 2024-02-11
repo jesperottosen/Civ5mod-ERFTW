@@ -6,7 +6,7 @@ print("Loaded OK")
 
 -- local iExplorerClass = GameInfoTypes.UNITCLASS_EXPLORERX
 local iPrereqTech = GameInfoTypes.TECH_ARCHAEOLOGY
-local iArtifactRess = GameInfoTypes.RESOURCE_ARTIFACTS
+local iArtifact = GameInfoTypes.RESOURCE_ARTIFACTS
 local iArtifactHidden = GameInfoTypes.RESOURCE_HIDDEN_ARTIFACTS
 local sReturntext = "hello mum"
 
@@ -16,21 +16,24 @@ function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 	local pPlot = Map.GetPlot(iX,iY)
 	if not pPlot then return end
 	
+	local pPlayer = Players[iPlayer]
+	local pTeamTechs = Teams[ pPlayer:GetTeam() ]:GetTeamTechs()
+	if not (pTeamTechs:HasTech(iPrereqTech)) then return end
+
 	local pResource = pPlot:GetResourceType(Game.GetActiveTeam())
-	if (pResource ~= iArtifactRess) and (pResource~= iArtifactHidden) then return end
+	if (pResource ~= iArtifact) and (pResource~= iArtifactHidden) then return end
 
 	
-	print("Plot OK, Ressource OK, Unit ??")
+	print("Plot OK, Tech OK, Ressource OK, Unit ??")
 	-- Act --
 
-	local pPlayer = Players[iPlayer]
+	
 
+	pPlot:SetResourceType(-1, 0)
 
 	-- Notify --
-	print("sreturn: "..sReturntext)
-		local notifyType = GameInfoTypes.NOTIFICATION_GOODY
-		local details = "(ERFTW) A goody bonus: "..sReturntext
-		print("details: "..details)
+	local notifyType = NotificationTypes.NOTIFICATION_GENERIC
+	local details = "(ERFTW) A goody bonus: "..sReturntext
 	pPlayer:AddNotification(notifyType, sReturntext, details, iX, iY)
 end
 --------------------------------------------------------------

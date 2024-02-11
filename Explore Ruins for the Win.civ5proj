@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <ProjectGuid>{f413d59f-afc2-4819-a7ea-40157745863e}</ProjectGuid>
-    <Name>GH Explore Ruins for the Win</Name>
+    <Name>Explore Ruins for the Win</Name>
     <Guid>05ba5a6f-a622-4bf4-b56c-61c7bec6b265</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Alpha</Stability>
