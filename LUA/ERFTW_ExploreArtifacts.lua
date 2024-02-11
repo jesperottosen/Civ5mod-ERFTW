@@ -11,6 +11,8 @@ local iArtifactHidden = GameInfoTypes.RESOURCE_HIDDEN_ARTIFACTS
 local sReturntext = ""
 
 --------------------------------------------------------------
+
+--------------------------------------------------------------
 function UpgradeExplorer(pPlayer,pUnit,iX,iY)
 	local canTrain = pPlayer:CanTrain(GameInfo.Units["UNIT_RIFLEMAN"].ID, true, true, true, false)
 	if canTrain then	
@@ -22,6 +24,41 @@ function UpgradeExplorer(pPlayer,pUnit,iX,iY)
 		pNewUnit:SetHasPromotion(iPromo2, true)
 		sReturntext = " Explorer upgraded and promoted" 
 	end
+end
+
+function GiveGold(pPlayer)
+	local eGold = pPlayer:GetGold()
+	pPlayer:SetGold(eGold+250)
+	sReturntext = " 250 Gold received"
+end
+
+function GiveSettler(pPlayer,iX,iY)
+	local canTrain = pPlayer:CanTrain(GameInfo.Units["UNIT_SETTLER"].ID, true, true, true, false)
+	if canTrain then
+		pPlayer:InitUnit(GameInfo.Units["UNIT_SETTLER"].ID, iX, iY)
+		sReturntext = " Settler received" 
+	else
+		pPlayer:InitUnit(GameInfo.Units["UNIT_VENETIAN_MERCHANT"].ID, iX, iY)
+		sReturntext = " Venetian Merchant received" 
+	end
+end
+
+function GiveTechBoost(pPlayer) 
+	local pTech = pPlayer:GetCurrentResearch()
+	if pTech == -1 then return end
+
+	local pTeam = Teams[pPlayer:GetTeam()]
+	if ( not pTeam:IsHasTech(pTech) ) then
+		local iPlayer = pPlayer:GetID()
+		pTeam:SetHasTech(pTech,true,iPlayer,true,true)
+		sReturntext = " Technology boost"
+	end
+end
+
+function GiveExperience(pUnit)
+	local exp = pUnit:GetExperience()
+	pUnit:SetExperience(exp+10, -1)
+	sReturntext = " 10+ Experience boost"
 end
 
 --------------------------------------------------------------
@@ -44,8 +81,9 @@ function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 	print("Plot OK, Tech OK, Ressource OK, Unit OK")
 	-- Act --
 
-	UpgradeExplorer(pPlayer,pUnit,iX,iY)
 
+
+	if sReturntext == "" then return end
 	pPlot:SetResourceType(-1, 0)
 
 	-- Notify --
