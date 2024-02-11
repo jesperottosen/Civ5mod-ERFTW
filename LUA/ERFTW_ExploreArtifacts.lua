@@ -32,8 +32,9 @@ function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 
 	--local canTrain = pPlayer:CanTrain(GameInfo.Units["UNIT_RIFLEMAN"].ID, true, true, true, false)
 	--if canTrain then
-		pUnit:Kill(false, -1);
+		
 		local pNewUnit = pPlayer:InitUnit(GameInfo.Units["UNIT_RIFLEMAN"].ID, iX, iY)
+		pUnit:Kill(true, -1)
 		--local iPromo1 = GameInfoTypes.PROMOTION_IGNORE_TERRAIN_COST
 		--local iPromo2 = GameInfoTypes.PROMOTION_EXTRA_SIGHT_I
 		--pNewUnit:SetHasPromotion(iPromo1, true)
