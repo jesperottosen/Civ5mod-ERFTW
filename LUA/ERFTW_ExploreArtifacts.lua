@@ -12,6 +12,51 @@ local sReturntext = ""
 
 --------------------------------------------------------------
 
+function SelectArtifactGoody()
+	local r = 1 + Game.Rand(10, "ERFTW: Selecting an Artifact goody type")
+	local goodie = 1
+	if r==1 then goodie = GameInfoTypes.GOODY_ERFTW_GOLD end
+	if r==2 then goodie = GameInfoTypes.GOODY_ERFTW_TECHBOOST end
+	if r==3 then goodie = GameInfoTypes.GOODY_ERFTW_SETTLER end
+	if r==4 then goodie = GameInfoTypes.GOODY_ERFTW_EXPERIENCE end
+	if r==5 then goodie = GameInfoTypes.GOODY_ERFTW_GOLD end
+	if r==6 then goodie = GameInfoTypes.GOODY_ERFTW_GOLD end
+	if r==7 then goodie = GameInfoTypes.GOODY_ERFTW_SETTLER end
+	if r==8 then goodie = GameInfoTypes.GOODY_ERFTW_EXPERIENCE end
+	if r==9 then goodie = GameInfoTypes.GOODY_ERFTW_UPGRADE end
+	if r==10 then goodie = GameInfoTypes.GOODY_ERFTW_UPGRADE end
+	return goodie
+end
+--------------------------------------------------------------
+function ValidArtifactGiveAway(iGoody,iHandicap)
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_GOLD) and (iHandicap==GameInfoTypes.HANDICAP_SETTLER) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_GOLD) and (iHandicap==GameInfoTypes.HANDICAP_CHIEFTAIN) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_GOLD) and (iHandicap==GameInfoTypes.HANDICAP_WARLORD) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_GOLD) and (iHandicap==GameInfoTypes.HANDICAP_PRINCE) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_GOLD) and (iHandicap==GameInfoTypes.HANDICAP_KING) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_GOLD) and (iHandicap==GameInfoTypes.HANDICAP_EMPEROR) then return true end 
+	--
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_SETTLER) and (iHandicap==GameInfoTypes.HANDICAP_SETTLER) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_SETTLER) and (iHandicap==GameInfoTypes.HANDICAP_CHIEFTAIN) then return true end 
+	--
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) and (iHandicap==GameInfoTypes.HANDICAP_SETTLER) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) and (iHandicap==GameInfoTypes.HANDICAP_CHIEFTAIN) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) and (iHandicap==GameInfoTypes.HANDICAP_WARLORD) then return true end 
+	--
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_EXPERIENCE) and (iHandicap==GameInfoTypes.HANDICAP_SETTLER) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_EXPERIENCE) and (iHandicap==GameInfoTypes.HANDICAP_CHIEFTAIN) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_EXPERIENCE) and (iHandicap==GameInfoTypes.HANDICAP_WARLORD) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_EXPERIENCE) and (iHandicap==GameInfoTypes.HANDICAP_PRINCE) then return true end 
+	--
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) and (iHandicap==GameInfoTypes.HANDICAP_SETTLER) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) and (iHandicap==GameInfoTypes.HANDICAP_CHIEFTAIN) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) and (iHandicap==GameInfoTypes.HANDICAP_WARLORD) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) and (iHandicap==GameInfoTypes.HANDICAP_PRINCE) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) and (iHandicap==GameInfoTypes.HANDICAP_KING) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) and (iHandicap==GameInfoTypes.HANDICAP_EMPEROR) then return true end 
+	--
+	return false
+end
 --------------------------------------------------------------
 function UpgradeExplorer(pPlayer,pUnit,iX,iY)
 	local canTrain = pPlayer:CanTrain(GameInfo.Units["UNIT_RIFLEMAN"].ID, true, true, true, false)
@@ -63,7 +108,7 @@ end
 
 --------------------------------------------------------------
 function doExploreArtifacts(iPlayer,iUnit,iX,iY)
-	-- Assert --
+	-- Initialize --
 	local pPlot = Map.GetPlot(iX,iY)
 	if not pPlot then return end
 	
@@ -79,10 +124,21 @@ function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 	if (pClass ~= iExplorerClass) then return end
 
 	print("Plot OK, Tech OK, Ressource OK, Unit OK")
+
+	-- Setup --
+	local iHandicap = Players[Game.GetActivePlayer()]:GetHandicapType()
+	local iGoody = SelectArtifactGoody()
+	local valid = ValidArtifactGiveAway(iGoody,iHandicap)
+	if not valid then return end
+	
+	print("Goody OK, Handicap OK")
+
 	-- Act --
-
-
-
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_GOLD) then GiveGold(pPlayer) end
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_SETTLER) then GiveSettler(pPlayer,iX,iY) end
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_EXPERIENCE) then GiveExperience(pUnit) end
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) then GiveTechBoost(pPlayer) end
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) then UpgradeExplorerX(pPlayer,pUnit,iX,iY) end
 	if sReturntext == "" then return end
 	pPlot:SetResourceType(-1, 0)
 

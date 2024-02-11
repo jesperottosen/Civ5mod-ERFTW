@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- yepzer 2023.12.28 -->
+<GameData>
+	<Eras>
+		<Update>
+			<Set NoGoodies="false" />
+			<Where Type="ERA_MEDIEVAL" />
+		</Update>
+		<Update>
+			<Set NoGoodies="false" />
+			<Where Type="ERA_RENAISSANCE" />
+		</Update>
+		<Update>
+			<Set NoGoodies="false" />
+			<Where Type="ERA_INDUSTRIAL" />
+		</Update>
+		<Update>
+			<Set NoGoodies="true" />
+			<Where Type="ERA_MODERN" />
+		</Update>
+		<Update>
+			<Set NoGoodies="true" />
+			<Where Type="ERA_POSTMODERN" />
+		</Update>
+		<Update>
+			<Set NoGoodies="true" />
+			<Where Type="ERA_FUTURE" />
+		</Update>
+	</Eras>
+	
+	<GoodyHuts>
+		<Row>
+			<Type>GOODY_ERFTW_GOLD</Type>
+			<Description>(ERFTW) Enhance your [ICON_GOLD] Gold.</Description>
+			<ChooseDescription>(ERFTW) Enhance your [ICON_GOLD] Gold.</ChooseDescription>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<Gold>250</Gold>
+			<NumGoldRandRolls>10</NumGoldRandRolls>
+			<GoldRandAmount>11</GoldRandAmount>
+		</Row>
+		<Row>
+			<Type>GOODY_ERFTW_MAP</Type>
+			<Description>(ERFTW) Reveal extended map.</Description>
+			<ChooseDescription>(ERFTW) Reveal extended map.</ChooseDescription>
+			<Sound>AS2D_GOODY_MAP</Sound>
+			<MapOffset>6</MapOffset>
+			<MapRange>6</MapRange>
+			<MapProb>80</MapProb>
+		</Row>
+		<Row>
+			<Type>GOODY_ERFTW_SETTLER</Type>
+			<Description>(ERFTW) Settler granted</Description>
+			<ChooseDescription>(ERFTW) Settler granted</ChooseDescription>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<UnitClass>UNITCLASS_SETTLER</UnitClass>
+		</Row>
+		<Row>
+			<Type>GOODY_ERFTW_SCOUT</Type>
+			<Description>(ERFTW) Scout granted</Description>
+			<ChooseDescription>(ERFTW) Scout granted</ChooseDescription>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<UnitClass>UNITCLASS_SCOUT</UnitClass>
+		</Row>
+		<Row>
+			<Type>GOODY_ERFTW_TECHBOOST</Type>
+			<Description>(ERFTW) Technology granted</Description>
+			<ChooseDescription>(ERFTW) Technology granted</ChooseDescription>
+			<Sound>AS2D_GOODY_XP</Sound>
+			<Tech>true</Tech>
+		</Row>
+		<Row>
+			<Type>GOODY_ERFTW_EXPERIENCE</Type>
+			<Description>(ERFTW) Boost Unit Experience.</Description>
+			<ChooseDescription>(ERFTW) Boost Unit Experience.</ChooseDescription>
+			<Sound>AS2D_GOODY_XP</Sound>
+			<Experience>9</Experience>
+		</Row>
+		<Row>
+			<Type>GOODY_ERFTW_UPGRADE</Type>
+			<Description>(ERFTW) Unit upgrade </Description>
+			<ChooseDescription>(ERFTW) Unit upgrade</ChooseDescription>
+			<Sound>AS2D_GOODY_XP</Sound>
+			<UpgradeUnit>true</UpgradeUnit>
+		</Row>
+		<Row>
+			<Type>GOODY_ERFTW_CULTURE</Type>
+			<Description>(ERFTW) Enhance your [ICON_CULTURE] Culture.</Description>
+			<ChooseDescription>(ERFTW) Enhance your [ICON_CULTURE] Culture</ChooseDescription>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<Culture>100</Culture>
+		</Row>
+	</GoodyHuts>
+</GameData>
