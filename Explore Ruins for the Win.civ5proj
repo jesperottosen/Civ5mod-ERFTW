@@ -92,10 +92,20 @@ The good huts are appearing double as much too, so should Ancient ruins.
       </Content>
     </ModContent>
     <ModActions>
-      <Action xmlns="">
+      <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>XML/USTE - Data.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/ERFTW-RemoveArchaeologists.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/ERFTW-RemoveGameTextInfos.xml</FileName>
       </Action>
     </ModActions>
   </PropertyGroup>
@@ -120,6 +130,14 @@ The good huts are appearing double as much too, so should Ancient ruins.
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="README.md">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\ERFTW-RemoveGameTextInfos.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\ERFTW-RemoveArchaeologists.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
