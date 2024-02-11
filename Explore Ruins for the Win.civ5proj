@@ -107,6 +107,16 @@ The good huts are appearing double as much too, so should Ancient ruins.
         <Type>UpdateDatabase</Type>
         <FileName>XML/ERFTW-RemoveGameTextInfos.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/UNI - Scout.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/Goody Increment.xml</FileName>
+      </Action>
     </ModActions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
@@ -138,6 +148,14 @@ The good huts are appearing double as much too, so should Ancient ruins.
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="XML\ERFTW-RemoveArchaeologists.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\Goody Increment.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\UNI - Scout.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 02-Apr-15 8:06:23 AM -->
+<GameData>
+	<Improvements>
+		<Update>
+			<Set TilesPerGoody="5"/> 
+			<!-- ERFTW -->
+			<Where Type="IMPROVEMENT_GOODY_HUT"/>
+		</Update>
+	</Improvements>
+</GameData>
