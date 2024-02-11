@@ -8,7 +8,7 @@ local iExplorerClass = GameInfoTypes.UNITCLASS_EXPLORERX
 local iPrereqTech = GameInfoTypes.TECH_ARCHAEOLOGY
 local iArtifact = GameInfoTypes.RESOURCE_ARTIFACTS
 local iArtifactHidden = GameInfoTypes.RESOURCE_HIDDEN_ARTIFACTS
-local sReturntext = "hello mum"
+local sReturntext = ""
 
 --------------------------------------------------------------
 function doExploreArtifacts(iPlayer,iUnit,iX,iY)
@@ -30,14 +30,22 @@ function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 	print("Plot OK, Tech OK, Ressource OK, Unit OK")
 	-- Act --
 
-	
+	--local canTrain = pPlayer:CanTrain(GameInfo.Units["UNIT_RIFLEMAN"].ID, true, true, true, false)
+	--if canTrain then
+		pUnit:Kill(false, -1);
+		local pNewUnit = pPlayer:InitUnit(GameInfo.Units["UNIT_RIFLEMAN"].ID, iX, iY)
+		--local iPromo1 = GameInfoTypes.PROMOTION_IGNORE_TERRAIN_COST
+		--local iPromo2 = GameInfoTypes.PROMOTION_EXTRA_SIGHT_I
+		--pNewUnit:SetHasPromotion(iPromo1, true)
+		--pNewUnit:SetHasPromotion(iPromo2, true)
+		sReturntext = " Explorer upgraded" 
+	--end
 
 	pPlot:SetResourceType(-1, 0)
 
 	-- Notify --
-	local notifyType = GameInfoTypes.NOTIFICATION_GENERIC
 	local details = "(ERFTW) A goody bonus: "..sReturntext
-	pPlayer:AddNotification(notifyType, sReturntext, details, iX, iY)
+	pPlayer:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, sReturntext, details, iX, iY)
 end
 --------------------------------------------------------------
 
