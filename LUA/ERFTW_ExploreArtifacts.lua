@@ -67,7 +67,7 @@ function UpgradeExplorer(pPlayer,pUnit,iX,iY)
 		local iPromo2 = GameInfoTypes.PROMOTION_EXTRA_SIGHT_I
 		pNewUnit:SetHasPromotion(iPromo1, true)
 		pNewUnit:SetHasPromotion(iPromo2, true)
-		sReturntext = " Explorer upgraded and promoted" 
+		sReturntext = " Explorer upgraded" 
 	end
 end
 
@@ -138,7 +138,7 @@ function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_SETTLER) then GiveSettler(pPlayer,iX,iY) end
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_EXPERIENCE) then GiveExperience(pUnit) end
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) then GiveTechBoost(pPlayer) end
-	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) then UpgradeExplorerX(pPlayer,pUnit,iX,iY) end
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) then UpgradeExplorer(pPlayer,pUnit,iX,iY) end
 	if sReturntext == "" then return end
 	pPlot:SetResourceType(-1, 0)
 
