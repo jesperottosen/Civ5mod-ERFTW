@@ -36,7 +36,7 @@ The good huts are appearing double as much too, so should Ancient ruins.
 [NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]Units - Starting Scout (v 1)[ENDCOLOR] by Bloublou
 [NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]More Goody Hut (v 9)[ENDCOLOR] by Loner Yound
 [NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]Units - Scout to Explorer (v 10)[ENDCOLOR] by Bloublou
-[NEWLINE]It can be played with "Promotions - Ancient Ruins Choice" by Bloublou2</Description>
+[NEWLINE]It can be played with "Promotions - Ancient Ruins Choice" by Bloublou</Description>
     <Authors>yepzer</Authors>
     <SpecialThanks>Bloublou, Loner Yound, William Howard, Tomatekh</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
@@ -83,6 +83,14 @@ The good huts are appearing double as much too, so should Ancient ruins.
         <MaxVersion>999</MaxVersion>
       </Association>
     </ModBlockers>
+    <ModContent>
+      <Content xmlns="">
+        <Type>InGameUIAddin</Type>
+        <Name>doExploreArtifacts</Name>
+        <Description>doExploreArtifacts</Description>
+        <FileName>LUA/ERFTW_ExploreArtifacts.lua</FileName>
+      </Content>
+    </ModContent>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
