@@ -35,11 +35,11 @@ function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 		
 		local pNewUnit = pPlayer:InitUnit(GameInfo.Units["UNIT_RIFLEMAN"].ID, iX, iY)
 		pUnit:Kill(true, -1)
-		--local iPromo1 = GameInfoTypes.PROMOTION_IGNORE_TERRAIN_COST
-		--local iPromo2 = GameInfoTypes.PROMOTION_EXTRA_SIGHT_I
-		--pNewUnit:SetHasPromotion(iPromo1, true)
-		--pNewUnit:SetHasPromotion(iPromo2, true)
-		sReturntext = " Explorer upgraded" 
+		local iPromo1 = GameInfoTypes.PROMOTION_IGNORE_TERRAIN_COST
+		local iPromo2 = GameInfoTypes.PROMOTION_EXTRA_SIGHT_I
+		pNewUnit:SetHasPromotion(iPromo1, true)
+		pNewUnit:SetHasPromotion(iPromo2, true)
+		sReturntext = " Explorer upgraded and promoted" 
 	--end
 
 	pPlot:SetResourceType(-1, 0)
