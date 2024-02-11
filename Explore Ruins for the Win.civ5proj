@@ -91,6 +91,13 @@ The good huts are appearing double as much too, so should Ancient ruins.
         <FileName>LUA/ERFTW_ExploreArtifacts.lua</FileName>
       </Content>
     </ModContent>
+    <ModActions>
+      <Action xmlns="">
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/USTE - Data.xml</FileName>
+      </Action>
+    </ModActions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -104,6 +111,10 @@ The good huts are appearing double as much too, so should Ancient ruins.
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Art\sv_explorer_mod.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="LUA\ERFTW_ExploreArtifacts.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -112,9 +123,15 @@ The good huts are appearing double as much too, so should Ancient ruins.
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="XML\USTE - Data.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LUA" />
+    <Folder Include="Art" />
+    <Folder Include="XML" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>
