@@ -11,6 +11,20 @@ local iArtifactHidden = GameInfoTypes.RESOURCE_HIDDEN_ARTIFACTS
 local sReturntext = ""
 
 --------------------------------------------------------------
+function UpgradeExplorer(pPlayer,pUnit,iX,iY)
+	local canTrain = pPlayer:CanTrain(GameInfo.Units["UNIT_RIFLEMAN"].ID, true, true, true, false)
+	if canTrain then	
+		local pNewUnit = pPlayer:InitUnit(GameInfo.Units["UNIT_RIFLEMAN"].ID, iX, iY)
+		pUnit:Kill(true, -1)
+		local iPromo1 = GameInfoTypes.PROMOTION_IGNORE_TERRAIN_COST
+		local iPromo2 = GameInfoTypes.PROMOTION_EXTRA_SIGHT_I
+		pNewUnit:SetHasPromotion(iPromo1, true)
+		pNewUnit:SetHasPromotion(iPromo2, true)
+		sReturntext = " Explorer upgraded and promoted" 
+	end
+end
+
+--------------------------------------------------------------
 function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 	-- Assert --
 	local pPlot = Map.GetPlot(iX,iY)
@@ -30,17 +44,7 @@ function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 	print("Plot OK, Tech OK, Ressource OK, Unit OK")
 	-- Act --
 
-	--local canTrain = pPlayer:CanTrain(GameInfo.Units["UNIT_RIFLEMAN"].ID, true, true, true, false)
-	--if canTrain then
-		
-		local pNewUnit = pPlayer:InitUnit(GameInfo.Units["UNIT_RIFLEMAN"].ID, iX, iY)
-		pUnit:Kill(true, -1)
-		local iPromo1 = GameInfoTypes.PROMOTION_IGNORE_TERRAIN_COST
-		local iPromo2 = GameInfoTypes.PROMOTION_EXTRA_SIGHT_I
-		pNewUnit:SetHasPromotion(iPromo1, true)
-		pNewUnit:SetHasPromotion(iPromo2, true)
-		sReturntext = " Explorer upgraded and promoted" 
-	--end
+	UpgradeExplorer(pPlayer,pUnit,iX,iY)
 
 	pPlot:SetResourceType(-1, 0)
 
