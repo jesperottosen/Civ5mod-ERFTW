@@ -1,24 +1,28 @@
-# Civ5mod-ERFTW
+# Civilization 5 mod - Explore Ruins for the Win
+![Explorer and treasure chest](https://github.com/jesperottosen/Civ5mod-ERFTW/blob/main/Art/erftw.jpg?raw=true)
 
 ## Installation
+Via steam on (https://steamcommunity.com/workshop/filedetails/?id=3159199696)
+Download the civ5mod file from this repository.
 
 ## Mod Design
-The goody hut part of this mod is straight forward based on XML from existing mods by **Bloublou** and **Loner Yound**. 
-Initially it included **Ancient Ruins Choice** too, but as the Artifact bonus currently is not selected, but random - I opted for the goody huts to be random too.
+The goody hut part of this mod is straightforward based on XML from existing mods by **Bloublou** and **Loner Yound**. For further options from the goody huts play as Pocatello or add the **Ancient Ruins Choice** mod. 
 
-After some failed experiments with a BUILD_ARTIFACT and IMPROVEMENT_EXPLORATION for EXPLORERS that would trigger the LUA GoodyHuts API the current LUA Starts from GameEvents.UnitSetXY. 
-For better perfromance it exits if the situaion is not valid wrt Unit type and ressource type.
+After some failed experiments with a build-action and fake improvement, which would trigger the LUA GoodyHuts API that approach was abandoned.  
+The current LUA Starts from GameEvents.UnitSetXY then quickly exits if the situation is not valid for the plot, unit, and technology. 
+A random outcome is selected and matched to settings for game difficulty. Each outcome has its own function, where a global string helps to track success.
+If the upgrade is successful, the plot is cleared and a notification is added.
 
 ## Mod Description
-Explore Ruins for the win (**ERFTW**) is about exploring the map and capturing the boosted goody huts and ancient ruins. 
-The good huts are appearing double as much too, so should Ancient ruins.
+Explore Ruins for the Win (**ERFTW**) is about exploring the map and capturing the boosted goody huts and ancient ruins. 
+The good huts appear double as much too, so should Ancient ruins.
 
 - Any unit can pick up early goody huts. 
-- Explorers are the only one to explore Ancient Ruins.
-- There is an elemt of randomness to it, so it may take a few tries/turns to explore an Ancient ruin. 
-- Explorers eventually upgrade to great war infantry.
+- Explorers are the only ones to explore Ancient Ruins.
+- There is an element of randomness to it, so it may take a few tries/turns to explore an Ancient ruin. 
+- Explorers eventually upgrades to great war infantry.
 - Be aware that AI players can use these too!
-- Archaologist have been removed as well as all references to landmarks and dig sites.
+- Archaeologists and references to landmarks and dig sites have been removed.
 
 Options are:
 - Settler 
