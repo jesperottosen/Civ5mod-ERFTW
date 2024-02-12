@@ -6,7 +6,7 @@
     <Name>Explore Ruins for the Win</Name>
     <Guid>05ba5a6f-a622-4bf4-b56c-61c7bec6b265</Guid>
     <ModVersion>3</ModVersion>
-    <Stability>Alpha</Stability>
+    <Stability>Stable</Stability>
     <Teaser>Archaological sites act as goody huts. Goody huts abundant.</Teaser>
     <Description>Explore Ruins for the win (ERFTW) is about exploring the map and capturing the boosted goody huts and ancient ruins. 
 The good huts are appearing double as much too, so should Ancient ruins.
@@ -128,6 +128,7 @@ The good huts are appearing double as much too, so should Ancient ruins.
         <FileName>XML/ERFTW-HandicapInfo.xml</FileName>
       </Action>
     </ModActions>
+    <Homepage>https://github.com/jesperottosen/Civ5mod-ERFTW</Homepage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
