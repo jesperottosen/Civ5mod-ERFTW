@@ -2,7 +2,8 @@
 ![Explorer and treasure chest](https://github.com/jesperottosen/Civ5mod-ERFTW/blob/main/Art/erftw.jpg?raw=true)
 
 ## Installation
-Via steam on (https://steamcommunity.com/workshop/filedetails/?id=3159199696)
+Via steam on (https://steamcommunity.com/workshop/filedetails/?id=3159199696).
+
 Download the civ5mod file from this repository.
 
 ## Mod Design
@@ -30,6 +31,7 @@ Options are:
 - Expanded map reveal (Goody huts only)
 - Experience boost (Artifacts only)
 - Unit upgrades
+
 These options are scaled based on game difficulty.
 
 It includes:
