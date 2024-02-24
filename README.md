@@ -12,24 +12,24 @@ The goody hut part of this mod is straightforward based on XML from existing mod
 After some failed experiments with a build-action and fake improvement, which would trigger the LUA GoodyHuts API that approach was abandoned. The current LUA Starts from GameEvents.UnitSetXY then quickly exits if the situation is not valid for the plot, unit, and technology. A random outcome is selected and matched to settings for game difficulty. Each outcome has a function, where a global string helps to track success. If the upgrade is successful, the plot is cleared and a notification is added.
 
 ## Mod Description
-Explore Ruins for the Win (**ERFTW**) is about exploring the map and capturing the boosted goody huts and ancient ruins. 
+Explore Ruins for the Win (**ERFTW**) is about exploring the map and capturing the boosted Goody Huts and Antiquity Sites. 
 The good huts appear double as much too, and so should the Ancient ruins.
 
 - Any unit can pick up early goody huts. 
-- Explorers are the only ones to explore Ancient Ruins.
-- There is an element of randomness to it, so it may take a few tries/turns to explore an Ancient ruin. 
-- Explorers eventually upgrades to great war infantry.
+- Explorers are the only ones to explore Antiquity Sites.
+- There is an element of randomness to it, so it may take a few tries/turns to get the bonus. 
+- Explorers eventually upgrades to Great War Infantry.
 - Be aware that AI players can use these too!
 - Archaeologists and references to landmarks and dig sites have been removed.
 
 Options are:
 - Settler 
-- Scout (goody huts only)
-- Tech boost (Artifact only)
+- Scout (Goody only)
+- Tech boost (Antiquity only)
 - 250 gold
-- 200 Culture (Goody huts only)
-- Expanded map reveal (Goody huts only)
-- Experience boost (Artifacts only)
+- 200 Culture (Goody only)
+- Expanded map reveal (Goody only)
+- Experience boost (Antiquity only)
 - Unit upgrades
 
 These options are scaled based on game difficulty.

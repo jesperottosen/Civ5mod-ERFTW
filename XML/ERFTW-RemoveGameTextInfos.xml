@@ -31,14 +31,10 @@
 		</Row>
 
 		<Delete Tag="TXT_KEY_RESOURCE_ARTIFACTS_HELP" />
-		<Row Tag="TXT_KEY_RESOURCE_ARTIFACTS_HELP">
-			<Text>(ERFTW) When improved with [COLOR_POSITIVE_TEXT]Explorer[ENDCOLOR] unit a bonus is received.</Text>
-		</Row>
+
 
 		<Delete Tag="TXT_KEY_BUILD_ARCHAEOLOGY_DIG_HELP" />
-		<Row Tag="TXT_KEY_BUILD_ARCHAEOLOGY_DIG_HELP">
-				<Text>Converts the Antiquity Site into an Archaeological Dig, which gives a Goody bonus.</Text>
-		</Row>
+
 			
 		<Delete tag="TXT_KEY_POLICY_NEW_DEAL_HELP" />
 		<Row Tag="TXT_KEY_POLICY_NEW_DEAL_HELP">
