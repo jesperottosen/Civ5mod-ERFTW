@@ -38,10 +38,13 @@ function ValidArtifactGiveAway(iGoody,iHandicap)
 	--
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_SETTLER) and (iHandicap==GameInfoTypes.HANDICAP_SETTLER) then return true end 
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_SETTLER) and (iHandicap==GameInfoTypes.HANDICAP_CHIEFTAIN) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_SETTLER) and (iHandicap==GameInfoTypes.HANDICAP_WARLORD) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_SETTLER) and (iHandicap==GameInfoTypes.HANDICAP_PRINCE) then return true end 
 	--
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) and (iHandicap==GameInfoTypes.HANDICAP_SETTLER) then return true end 
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) and (iHandicap==GameInfoTypes.HANDICAP_CHIEFTAIN) then return true end 
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) and (iHandicap==GameInfoTypes.HANDICAP_WARLORD) then return true end 
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) and (iHandicap==GameInfoTypes.HANDICAP_PRINCE) then return true end 
 	--
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_EXPERIENCE) and (iHandicap==GameInfoTypes.HANDICAP_SETTLER) then return true end 
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_EXPERIENCE) and (iHandicap==GameInfoTypes.HANDICAP_CHIEFTAIN) then return true end 

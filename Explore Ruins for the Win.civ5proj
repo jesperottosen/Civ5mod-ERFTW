@@ -5,7 +5,7 @@
     <ProjectGuid>{f413d59f-afc2-4819-a7ea-40157745863e}</ProjectGuid>
     <Name>Explore Ruins for the Win</Name>
     <Guid>05ba5a6f-a622-4bf4-b56c-61c7bec6b265</Guid>
-    <ModVersion>3</ModVersion>
+    <ModVersion>4</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Archaological sites act as goody huts. Goody huts abundant.</Teaser>
     <Description>Explore Ruins for the Win (ERFTW) is about exploring the map and capturing the boosted Goody Huts and Antiquity Sites. The good huts appear double as much too, and so should the Antiquity Sites.
