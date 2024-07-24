@@ -35,10 +35,7 @@
 			<HandicapType>HANDICAP_DEITY</HandicapType>
 			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
 		</Row>
-		<Row>
-			<HandicapType>HANDICAP_AI_DEFAULT</HandicapType>
-			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
-		</Row>
+
 		
 		<!-- GOODY_ERFTW_TECHBOOST: G:///EPKEID A:SCWPK/// -->
 		<Row>
@@ -65,10 +62,7 @@
 			<HandicapType>HANDICAP_DEITY</HandicapType>
 			<GoodyType>GOODY_ERFTW_TECHBOOST</GoodyType>
 		</Row>
-		<Row>
-			<HandicapType>HANDICAP_AI_DEFAULT</HandicapType>
-			<GoodyType>GOODY_ERFTW_TECHBOOST</GoodyType>
-		</Row>
+
 		
 		<!-- GOODY_ERFTW_GOLD: G://WPKEID A:SCWPKE// -->
 		<Row>
@@ -160,10 +154,7 @@
 			<HandicapType>HANDICAP_DEITY</HandicapType>
 			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
 		</Row>
-		<Row>
-			<HandicapType>HANDICAP_AI_DEFAULT</HandicapType>
-			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
-		</Row>
+
 		
 		<!-- GOODY_ERFTW_SETTLER: G:SC////// A:SC//////  -->
 		<Row>
@@ -206,10 +197,7 @@
 			<HandicapType>HANDICAP_DEITY</HandicapType>
 			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
 		</Row>
-		<Row>
-			<HandicapType>HANDICAP_AI_DEFAULT</HandicapType>
-			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
-		</Row>
+
 		
 		<!-- GOODY_ERFTW_SCOUT: G:SCWPKEID A://////// -->
 		<Row>
@@ -275,10 +263,7 @@
 			<HandicapType>HANDICAP_DEITY</HandicapType>
 			<GoodyType>GOODY_ERFTW_CULTURE</GoodyType>
 		</Row>
-		<Row>
-			<HandicapType>HANDICAP_AI_DEFAULT</HandicapType>
-			<GoodyType>GOODY_ERFTW_CULTURE</GoodyType>
-		</Row>
+
 		
 		<!-- Delete originals and surplus-->
 		<Delete GoodyType="GOODY_MAP"/>
