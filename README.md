@@ -1,5 +1,5 @@
 # Civilization 5 mod - Explore Ruins for the Win
-![Explorer and treasure chest](https://github.com/jesperottosen/Civ5mod-ERFTW/blob/main/Project/Art/erftw.jpg?raw=true)
+![Explorer and treasure chest](https://github.com/jesperottosen/Civ5mod-ERFTW/blob/main/Steam/erftw.jpg?raw=true)
 
 ## Installation
 Via steam on (https://steamcommunity.com/workshop/filedetails/?id=3159199696).
