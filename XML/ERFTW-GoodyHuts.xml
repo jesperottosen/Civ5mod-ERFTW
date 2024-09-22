@@ -34,7 +34,7 @@
 			<Description>(ERFTW) Enhance your [ICON_GOLD] Gold.</Description>
 			<ChooseDescription>(ERFTW) Enhance your [ICON_GOLD] Gold.</ChooseDescription>
 			<Sound>AS2D_GOODY_GOLD</Sound>
-			<Gold>250</Gold>
+			<Gold>500</Gold>
 			<NumGoldRandRolls>10</NumGoldRandRolls>
 			<GoldRandAmount>11</GoldRandAmount>
 		</Row>

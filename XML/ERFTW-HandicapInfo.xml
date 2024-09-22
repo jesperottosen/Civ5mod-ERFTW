@@ -2,7 +2,7 @@
 <!-- yepzer 2023.12.28 based on GoodyHutsNoMaps.xml by William Howard and Additional Ancient Ruin Rewards by Tomatekh  -->
 <GameData>
 	<HandicapInfo_Goodies>
-		<!-- GOODY_ERFTW_EXPERIENCE: G:SCWPKEID A:S,C,W,P,//// -->
+		<!-- GOODY_ERFTW_EXPERIENCE: G:SCWPKEID -->
 		<Row>
 			<HandicapType>HANDICAP_SETTLER</HandicapType>
 			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
@@ -37,7 +37,7 @@
 		</Row>
 
 		
-		<!-- GOODY_ERFTW_TECHBOOST: G:///EPKEID A:SCWPK/// -->
+		<!-- GOODY_ERFTW_TECHBOOST: G:///EPKEID -->
 		<Row>
 			<HandicapType>HANDICAP_WARLORD</HandicapType>
 			<GoodyType>GOODY_ERFTW_TECHBOOST</GoodyType>
@@ -64,7 +64,7 @@
 		</Row>
 
 		
-		<!-- GOODY_ERFTW_GOLD: G://WPKEID A:SCWPKE// -->
+		<!-- GOODY_ERFTW_GOLD: G://WPKEID -->
 		<Row>
 			<HandicapType>HANDICAP_WARLORD</HandicapType>
 			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
@@ -94,7 +94,7 @@
 			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
 		</Row>
 		
-		<!-- GOODY_ERFTW_UPGRADE: G:///PKEID A:SCWPKE// -->
+		<!-- GOODY_ERFTW_UPGRADE: G:///PKEID -->
 		<Row>
 			<HandicapType>HANDICAP_PRINCE</HandicapType>
 			<GoodyType>GOODY_ERFTW_UPGRADE</GoodyType>
@@ -121,7 +121,7 @@
 		</Row>
 		
 		
-		<!-- GOODY_ERFTW_MAP: G:SCWPKEID A:////////  -->
+		<!-- GOODY_ERFTW_MAP: G:SCWPKEID   -->
 		<Row>
 			<HandicapType>HANDICAP_SETTLER</HandicapType>
 			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
@@ -156,7 +156,7 @@
 		</Row>
 
 		
-		<!-- GOODY_ERFTW_SETTLER: G:SC////// A:SC//////  -->
+		<!-- GOODY_ERFTW_SETTLER: G:SC////// -->
 		<Row>
 			<HandicapType>HANDICAP_SETTLER</HandicapType>
 			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
@@ -199,7 +199,7 @@
 		</Row>
 
 		
-		<!-- GOODY_ERFTW_SCOUT: G:SCWPKEID A://////// -->
+		<!-- GOODY_ERFTW_SCOUT: G:SCWPKEID -->
 		<Row>
 			<HandicapType>HANDICAP_SETTLER</HandicapType>
 			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
@@ -237,7 +237,7 @@
 			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
 		</Row>
 		
-		<!-- GOODY_ERFTW_CULTURE: G://WPKEID A://////// -->
+		<!-- GOODY_ERFTW_CULTURE: G://WPKEID -->
 
 		<Row>
 			<HandicapType>HANDICAP_WARLORD</HandicapType>
