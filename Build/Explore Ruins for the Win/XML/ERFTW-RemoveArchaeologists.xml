@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- yepzer, january 2024 -->
+<GameData>
+	<Policy_ImprovementCultureChanges>
+		<Delete PolicyType="POLICY_NEW_DEAL" />
+	</Policy_ImprovementCultureChanges>
+
+	<Resolutions>
+		<Delete type="RESOLUTION_HISTORICAL_LANDMARKS" />
+	</Resolutions>
+	
+	<Improvements>
+		<Delete Type="IMPROVEMENT_ARCHAEOLOGICAL_DIG" />
+		<Delete Type="IMPROVEMENT_LANDMARK" />
+	</Improvements>
+		
+	<Builds>
+		<Delete Type="BUILD_LANDMARK" />
+	</Builds>
+
+	<Units>
+		<Delete Type="UNIT_ARCHAEOLOGIST" />
+		<Delete Class="UNITCLASS_ARCHAEOLOGIST" />
+	</Units>
+
+	<Resources>
+		<Update>
+			<Set ConstAppearance="200" />
+			<Where Type="RESOURCE_ARTIFACTS" />
+		</Update>
+	</Resources>
+	
+</GameData>

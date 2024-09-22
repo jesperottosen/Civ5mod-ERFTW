@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="05ba5a6f-a622-4bf4-b56c-61c7bec6b265" version="5">
+  <Properties>
+    <Name>Explore Ruins for the Win</Name>
+    <Teaser>Archaological sites act as goody huts. Goody huts abundant.</Teaser>
+    <Description>Explore Ruins for the Win (ERFTW) is about exploring the map and capturing the boosted Goody Huts and Antiquity Sites. The good huts appear double as much too, and so should the Antiquity Sites.
+
+[NEWLINE]
+[NEWLINE][ICON_BULLET] Any unit can pick up early Goody Huts
+[NEWLINE][ICON_BULLET] Explorers are the only ones to explore Antiquity Sites.
+[NEWLINE][ICON_BULLET] Explorers eventually upgrades to Great War Infantry.
+[NEWLINE][ICON_BULLET] Archaeologists and references to landmarks and dig sites have been removed.
+[NEWLINE][ICON_BULLET] Be aware that AI players can use these too!
+
+[NEWLINE]
+[NEWLINE]Options are:
+[NEWLINE][ICON_BULLET] Settler 
+[NEWLINE][ICON_BULLET] Scout (Goody only)
+[NEWLINE][ICON_BULLET] Tech boost (Antiquity only)
+[NEWLINE][ICON_BULLET] 500 gold
+[NEWLINE][ICON_BULLET] 200 Culture (Goody only)
+[NEWLINE][ICON_BULLET] Expanded map reveal (Goody only)
+[NEWLINE][ICON_BULLET] Experience boost (Antiquity only)
+[NEWLINE][ICON_BULLET] Unit upgrades
+
+[NEWLINE]
+[NEWLINE]It includes:
+[NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]Units - Starting Scout (v 1)[ENDCOLOR] by Bloublou
+[NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]More Goody Hut (v 9)[ENDCOLOR] by Loner Yound
+[NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]Units - Scout to Explorer (v 10)[ENDCOLOR] by Bloublou
+[NEWLINE]It can be played with "Promotions - Ancient Ruins Choice" by Bloublou</Description>
+    <Authors>yepzer</Authors>
+    <SpecialThanks>Bloublou, Loner Yound, William Howard, Tomatekh</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>https://github.com/jesperottosen/Civ5mod-ERFTW</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+  </Dependencies>
+  <References />
+  <Blocks>
+    <Mod id="705d2254-692e-43fa-a502-dec5ed7ecb94" minversion="10" maxversion="999" title="Units - Scout to Explorer" />
+    <Mod id="00a28291-c503-4edf-8d76-0da4f86669d2" minversion="1" maxversion="999" title="Units - Starting Scout" />
+    <Mod id="add4f1cb-5675-4011-be66-e318748c7ef4" minversion="9" maxversion="999" title="More Goody Hut" />
+  </Blocks>
+  <Files>
+    <File md5="BFA24C2399EE99BA10D3E6270ED1C50A" import="1">Art/sv_explorer_mod.dds</File>
+    <File md5="8C3232329EECDE0DD3CE1A82C2AD2A17" import="0">LUA/ERFTW_ExploreArtifacts.lua</File>
+    <File md5="83C83D4850F73F0976AC979E5ADCE1CC" import="0">XML/ERFTW-GoodyHuts.xml</File>
+    <File md5="5B211AFB834397BE8F5D3781F3682C49" import="0">XML/ERFTW-HandicapInfo.xml</File>
+    <File md5="A76D53D26C311E3DE0B8E605E4262D05" import="0">XML/ERFTW-RemoveGameTextInfos.xml</File>
+    <File md5="F74376C330C1BFD1E57D55028E6A62D3" import="0">XML/ERFTW-RemoveArchaeologists.xml</File>
+    <File md5="3F931A64CE29ADFAEBF806E9EEC5E79B" import="0">XML/Goody Increment.xml</File>
+    <File md5="ED7887C6F81816A51063F79E82E51A04" import="0">XML/UNI - Scout.xml</File>
+    <File md5="DAA1DF1D3D231EA8A531C386713ABC9C" import="0">XML/USTE - Data.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/USTE - Data.xml</UpdateDatabase>
+      <UpdateDatabase>XML/ERFTW-RemoveArchaeologists.xml</UpdateDatabase>
+      <UpdateDatabase>XML/ERFTW-RemoveGameTextInfos.xml</UpdateDatabase>
+      <UpdateDatabase>XML/UNI - Scout.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Goody Increment.xml</UpdateDatabase>
+      <UpdateDatabase>XML/ERFTW-GoodyHuts.xml</UpdateDatabase>
+      <UpdateDatabase>XML/ERFTW-HandicapInfo.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/ERFTW_ExploreArtifacts.lua">
+      <Name>doExploreArtifacts</Name>
+      <Description>doExploreArtifacts</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

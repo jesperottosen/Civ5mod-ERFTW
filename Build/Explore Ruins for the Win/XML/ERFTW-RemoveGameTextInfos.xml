@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- yepzer, january 2024 -->
+<GameData>
+
+	<Concepts_RelatedConcept>
+		<Delete ConceptType="CONCEPT_SPECIALISTS_AND_GREAT_PEOPLE_GREAT_PEOPLE_LANDMARK" />
+		<Delete RelatedConcept="CONCEPT_SPECIALISTS_AND_GREAT_PEOPLE_GREAT_PEOPLE_LANDMARK" />
+	</Concepts_RelatedConcept>
+
+	<Language_en_US>
+		<Delete tag="TXT_KEY_CIV5_IMPROVEMENTS_ARCHAEOLOGICAL_DIG_TEXT" />
+
+		<Delete tag="TXT_KEY_RESOURCE_ARTIFACTS" />
+		<Row Tag="TXT_KEY_RESOURCE_ARTIFACTS">
+			<Text>Antiquity Sites</Text>
+		</Row>
+
+		<Delete tag="TXT_KEY_CIV5_RESOURCE_ARTIFACTS_TEXT" />
+		<Row Tag="TXT_KEY_CIV5_RESOURCE_ARTIFACTS_TEXT">
+			<Text>(ERFTW) Explore it with an [COLOR_POSITIVE_TEXT]Explorer[ENDCOLOR] unit to get a bonus</Text>
+		</Row>
+		
+		<Delete tag="TXT_KEY_RESOURCE_ARTIFACTS_HELP" />
+		<Row Tag="TXT_KEY_RESOURCE_ARTIFACTS_HELP">
+			<Text>(ERFTW) When explored by and [COLOR_POSITIVE_TEXT]Explorer[ENDCOLOR] unit a bonus is received</Text>
+		</Row>
+
+		<Delete Tag="TXT_KEY_CULTURE_ARCH_HEADING2_BODY" />
+		<Row Tag="TXT_KEY_CULTURE_ARCH_HEADING2_BODY">
+			<Text>Once you've researched Archaeology, there will be a new resource that appears on the map called "Antiquity Sites". (ERFTW) Explore it with an [COLOR_POSITIVE_TEXT]Explorer[ENDCOLOR] unit to get a bonus</Text>
+		</Row>
+
+		<Delete Tag="TXT_KEY_RESOURCE_ARTIFACTS_HELP" />
+
+
+		<Delete Tag="TXT_KEY_BUILD_ARCHAEOLOGY_DIG_HELP" />
+
+			
+		<Delete tag="TXT_KEY_POLICY_NEW_DEAL_HELP" />
+		<Row Tag="TXT_KEY_POLICY_NEW_DEAL_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]New Deal[ENDCOLOR][NEWLINE]Great Person improvements produce +4 of the appropriate yield.</Text>
+		</Row>
+
+		<Delete tag="TXT_KEY_CULTURE_ANTIQUITY_ADV_QUEST" />
+		<Delete tag="TXT_KEY_CULTURE_ARTIFACTS_HEADING2_TITLE" />
+		<Delete tag="TXT_KEY_CULTURE_ARTIFACTS_HEADING2_BODY" />
+		<Delete tag="TXT_KEY_CULTURE_ARTIFACTS_ADV_QUEST" />
+		<Delete tag="TXT_KEY_SPECIALISTSANDGP_LANDMARK_HEADING4_TITLE" />
+		<Delete tag="TXT_KEY_SPECIALISTSANDGP_LANDMARK_HEADING4_BODY" />
+		<Delete tag="TXT_KEY_SPECIALISTSANDGP_LANDMARK_ADV_QUEST" />
+	</Language_en_US>
+	
+</GameData>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- yepzer 2023.12.28 based on GoodyHutsNoMaps.xml by William Howard and Additional Ancient Ruin Rewards by Tomatekh  -->
+<GameData>
+	<HandicapInfo_Goodies>
+		<!-- GOODY_ERFTW_EXPERIENCE: G:SCWPKEID -->
+		<Row>
+			<HandicapType>HANDICAP_SETTLER</HandicapType>
+			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_CHIEFTAIN</HandicapType>
+			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_WARLORD</HandicapType>
+			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_PRINCE</HandicapType>
+			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_KING</HandicapType>
+			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<GoodyType>GOODY_ERFTW_EXPERIENCE</GoodyType>
+		</Row>
+
+		
+		<!-- GOODY_ERFTW_TECHBOOST: G:///EPKEID -->
+		<Row>
+			<HandicapType>HANDICAP_WARLORD</HandicapType>
+			<GoodyType>GOODY_ERFTW_TECHBOOST</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_PRINCE</HandicapType>
+			<GoodyType>GOODY_ERFTW_TECHBOOST</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_KING</HandicapType>
+			<GoodyType>GOODY_ERFTW_TECHBOOST</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<GoodyType>GOODY_ERFTW_TECHBOOST</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<GoodyType>GOODY_ERFTW_TECHBOOST</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<GoodyType>GOODY_ERFTW_TECHBOOST</GoodyType>
+		</Row>
+
+		
+		<!-- GOODY_ERFTW_GOLD: G://WPKEID -->
+		<Row>
+			<HandicapType>HANDICAP_WARLORD</HandicapType>
+			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_PRINCE</HandicapType>
+			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_KING</HandicapType>
+			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_AI_DEFAULT</HandicapType>
+			<GoodyType>GOODY_ERFTW_GOLD</GoodyType>
+		</Row>
+		
+		<!-- GOODY_ERFTW_UPGRADE: G:///PKEID -->
+		<Row>
+			<HandicapType>HANDICAP_PRINCE</HandicapType>
+			<GoodyType>GOODY_ERFTW_UPGRADE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_KING</HandicapType>
+			<GoodyType>GOODY_ERFTW_UPGRADE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<GoodyType>GOODY_ERFTW_UPGRADE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<GoodyType>GOODY_ERFTW_UPGRADE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<GoodyType>GOODY_ERFTW_UPGRADE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_AI_DEFAULT</HandicapType>
+			<GoodyType>GOODY_ERFTW_UPGRADE</GoodyType>
+		</Row>
+		
+		
+		<!-- GOODY_ERFTW_MAP: G:SCWPKEID   -->
+		<Row>
+			<HandicapType>HANDICAP_SETTLER</HandicapType>
+			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_CHIEFTAIN</HandicapType>
+			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_WARLORD</HandicapType>
+			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_PRINCE</HandicapType>
+			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_KING</HandicapType>
+			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<GoodyType>GOODY_ERFTW_MAP</GoodyType>
+		</Row>
+
+		
+		<!-- GOODY_ERFTW_SETTLER: G:SC////// -->
+		<Row>
+			<HandicapType>HANDICAP_SETTLER</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_CHIEFTAIN</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_SETTLER</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_CHIEFTAIN</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_WARLORD</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_PRINCE</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_KING</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<GoodyType>GOODY_ERFTW_SETTLER</GoodyType>
+		</Row>
+
+		
+		<!-- GOODY_ERFTW_SCOUT: G:SCWPKEID -->
+		<Row>
+			<HandicapType>HANDICAP_SETTLER</HandicapType>
+			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_CHIEFTAIN</HandicapType>
+			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_WARLORD</HandicapType>
+			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_PRINCE</HandicapType>
+			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_KING</HandicapType>
+			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_AI_DEFAULT</HandicapType>
+			<GoodyType>GOODY_ERFTW_SCOUT</GoodyType>
+		</Row>
+		
+		<!-- GOODY_ERFTW_CULTURE: G://WPKEID -->
+
+		<Row>
+			<HandicapType>HANDICAP_WARLORD</HandicapType>
+			<GoodyType>GOODY_ERFTW_CULTURE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_PRINCE</HandicapType>
+			<GoodyType>GOODY_ERFTW_CULTURE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_KING</HandicapType>
+			<GoodyType>GOODY_ERFTW_CULTURE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_EMPEROR</HandicapType>
+			<GoodyType>GOODY_ERFTW_CULTURE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_IMMORTAL</HandicapType>
+			<GoodyType>GOODY_ERFTW_CULTURE</GoodyType>
+		</Row>
+		<Row>
+			<HandicapType>HANDICAP_DEITY</HandicapType>
+			<GoodyType>GOODY_ERFTW_CULTURE</GoodyType>
+		</Row>
+
+		
+		<!-- Delete originals and surplus-->
+		<Delete GoodyType="GOODY_MAP"/>
+		<Delete GoodyType="GOODY_GOLD"/>
+		<Delete GoodyType="GOODY_CULTURE"/>
+		<Delete GoodyType="GOODY_SETTLER"/>
+		<Delete GoodyType="GOODY_SCOUT"/>
+		<Delete GoodyType="GOODY_TECH"/>
+		<Delete GoodyType="GOODY_EXPERIENCE"/>
+		
+		<Delete GoodyType="GOODY_WARRIOR"/>
+		<Delete GoodyType="GOODY_POPULATION"/>
+		<Delete GoodyType="GOODY_PANTHEON_FAITH"/>
+		<Delete GoodyType="GOODY_PROPHET_FAITH"/>
+		<Delete GoodyType="GOODY_REVEAL_NEARBY_BARBS"/>
+		<Delete GoodyType="GOODY_REVEAL_RESOURCE"/>
+		<Delete GoodyType="GOODY_UPGRADE_UNIT"/>
+		<Delete GoodyType="GOODY_BARBARIANS_WEAK"/>
+		<Delete GoodyType="GOODY_BARBARIANS_STRONG"/>
+		<Delete GoodyType="GOODY_LOW_GOLD"/>
+		<Delete GoodyType="GOODY_HIGH_GOLD"/>
+		<Delete GoodyType="GOODY_WORKER"/>
+		<Delete GoodyType="GOODY_HEALING"/>
+
+	</HandicapInfo_Goodies>
+</GameData>
