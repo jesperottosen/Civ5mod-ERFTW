@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="05ba5a6f-a622-4bf4-b56c-61c7bec6b265" version="5">
+<Mod id="05ba5a6f-a622-4bf4-b56c-61c7bec6b265" version="6">
   <Properties>
     <Name>Explore Ruins for the Win</Name>
     <Teaser>Archaological sites act as goody huts. Goody huts abundant.</Teaser>
@@ -18,11 +18,11 @@
 [NEWLINE][ICON_BULLET] Scout (Goody only)
 [NEWLINE][ICON_BULLET] Tech boost (Antiquity only)
 [NEWLINE][ICON_BULLET] 500 gold
-[NEWLINE][ICON_BULLET] 200 Culture (Goody only)
+[NEWLINE][ICON_BULLET] 200 Culture 
 [NEWLINE][ICON_BULLET] Expanded map reveal (Goody only)
 [NEWLINE][ICON_BULLET] Experience boost (Antiquity only)
 [NEWLINE][ICON_BULLET] Unit upgrades
-
+[NEWLINE][ICON_BULLET] Golden Era
 [NEWLINE]
 [NEWLINE]It includes:
 [NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]Units - Starting Scout (v 1)[ENDCOLOR] by Bloublou
@@ -55,14 +55,14 @@
   </Blocks>
   <Files>
     <File md5="BFA24C2399EE99BA10D3E6270ED1C50A" import="1">Art/sv_explorer_mod.dds</File>
-    <File md5="8C3232329EECDE0DD3CE1A82C2AD2A17" import="0">LUA/ERFTW_ExploreArtifacts.lua</File>
-    <File md5="83C83D4850F73F0976AC979E5ADCE1CC" import="0">XML/ERFTW-GoodyHuts.xml</File>
+    <File md5="00CFB1F2ED40C3CF374966C1BB4B0845" import="0">LUA/ERFTW_ExploreArtifacts.lua</File>
+    <File md5="03775E588EC122D7196D6A2C04C815F8" import="0">XML/ERFTW-GoodyHuts.xml</File>
     <File md5="5B211AFB834397BE8F5D3781F3682C49" import="0">XML/ERFTW-HandicapInfo.xml</File>
     <File md5="A76D53D26C311E3DE0B8E605E4262D05" import="0">XML/ERFTW-RemoveGameTextInfos.xml</File>
     <File md5="F74376C330C1BFD1E57D55028E6A62D3" import="0">XML/ERFTW-RemoveArchaeologists.xml</File>
     <File md5="3F931A64CE29ADFAEBF806E9EEC5E79B" import="0">XML/Goody Increment.xml</File>
     <File md5="ED7887C6F81816A51063F79E82E51A04" import="0">XML/UNI - Scout.xml</File>
-    <File md5="DAA1DF1D3D231EA8A531C386713ABC9C" import="0">XML/USTE - Data.xml</File>
+    <File md5="901AC2B04A4126B63C9F581B33FE19BE" import="0">XML/USTE - Data.xml</File>
   </Files>
   <Actions>
     <OnModActivated>

@@ -12,18 +12,14 @@ local iArtifactHidden = GameInfoTypes.RESOURCE_HIDDEN_ARTIFACTS
 --------------------------------------------------------------
 
 function SelectArtifactGoody()
-	local r = 1 + Game.Rand(10, "ERFTW: Selecting an Artifact goody type")
+	local r = 1 + Game.Rand(6, "ERFTW: Selecting an Artifact goody type")
 	local goodie = 1
 	if r==1 then goodie = GameInfoTypes.GOODY_ERFTW_GOLD end
 	if r==2 then goodie = GameInfoTypes.GOODY_ERFTW_TECHBOOST end
 	if r==3 then goodie = GameInfoTypes.GOODY_ERFTW_SETTLER end
 	if r==4 then goodie = GameInfoTypes.GOODY_ERFTW_EXPERIENCE end
-	if r==5 then goodie = GameInfoTypes.GOODY_ERFTW_GOLD end
-	if r==6 then goodie = GameInfoTypes.GOODY_ERFTW_GOLD end
-	if r==7 then goodie = GameInfoTypes.GOODY_ERFTW_SETTLER end
-	if r==8 then goodie = GameInfoTypes.GOODY_ERFTW_EXPERIENCE end
-	if r==9 then goodie = GameInfoTypes.GOODY_ERFTW_UPGRADE end
-	if r==10 then goodie = GameInfoTypes.GOODY_ERFTW_UPGRADE end
+	if r==5 then goodie = GameInfoTypes.GOODY_ERFTW_GOLDENERA end
+	if r==6 then goodie = GameInfoTypes.GOODY_ERFTW_CULTURE end
 	return goodie
 end
 
@@ -78,6 +74,18 @@ function GiveExperience(pUnit)
 	return " 10+ Experience boost"
 end
 
+function GiveGoldenEra(pPlayer)
+	local iEras = pPlayer:GetGoldenAgeLength()
+	pPlayer:ChangeGoldenAgeTurns(iEras+25)
+	return " Golden Era"
+end
+
+function GiveCulture(pPlayer)
+	local iCulture = pPlayer:GetJONSCulture()
+	pPlayer:ChangeJONSCulture(200) 
+	return " more culture"
+end
+
 --------------------------------------------------------------
 function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 	-- Initialize --
@@ -105,6 +113,8 @@ function doExploreArtifacts(iPlayer,iUnit,iX,iY)
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_SETTLER) then sReturntext = GiveSettler(pPlayer,iX,iY) end
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_EXPERIENCE) then sReturntext = GiveExperience(pUnit) end
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_TECHBOOST) then sReturntext = GiveTechBoost(pPlayer) end
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_GOLDENERA) then sReturntext = GiveGoldenEra(pPlayer) end
+	if (iGoody == GameInfoTypes.GOODY_ERFTW_CULTURE) then sReturntext = GiveCulture(pPlayer) end
 	if (iGoody == GameInfoTypes.GOODY_ERFTW_UPGRADE) then sReturntext = UpgradeExplorer(pPlayer,pUnit,iX,iY) end
 	if sReturntext == "" then return end
 	pPlot:SetResourceType(-1, 0)

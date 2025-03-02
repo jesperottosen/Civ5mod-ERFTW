@@ -5,7 +5,7 @@
     <ProjectGuid>{f413d59f-afc2-4819-a7ea-40157745863e}</ProjectGuid>
     <Name>Explore Ruins for the Win</Name>
     <Guid>05ba5a6f-a622-4bf4-b56c-61c7bec6b265</Guid>
-    <ModVersion>5</ModVersion>
+    <ModVersion>6</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Archaological sites act as goody huts. Goody huts abundant.</Teaser>
     <Description>Explore Ruins for the Win (ERFTW) is about exploring the map and capturing the boosted Goody Huts and Antiquity Sites. The good huts appear double as much too, and so should the Antiquity Sites.
@@ -23,11 +23,11 @@
 [NEWLINE][ICON_BULLET] Scout (Goody only)
 [NEWLINE][ICON_BULLET] Tech boost (Antiquity only)
 [NEWLINE][ICON_BULLET] 500 gold
-[NEWLINE][ICON_BULLET] 200 Culture (Goody only)
+[NEWLINE][ICON_BULLET] 200 Culture 
 [NEWLINE][ICON_BULLET] Expanded map reveal (Goody only)
 [NEWLINE][ICON_BULLET] Experience boost (Antiquity only)
 [NEWLINE][ICON_BULLET] Unit upgrades
-
+[NEWLINE][ICON_BULLET] Golden Era
 [NEWLINE]
 [NEWLINE]It includes:
 [NEWLINE][ICON_BULLET] [COLOR_POSITIVE_TEXT]Units - Starting Scout (v 1)[ENDCOLOR] by Bloublou

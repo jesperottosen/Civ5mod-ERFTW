@@ -45,7 +45,7 @@
 			<Pillage>true</Pillage>
 			<MilitarySupport>true</MilitarySupport>
 			<MilitaryProduction>true</MilitaryProduction>
-			<ObsoleteTech>TECH_RADAR</ObsoleteTech>
+			<!-- ObsoleteTech>TECH_RADAR</ObsoleteTech -->
 			<GoodyHutUpgradeUnitClass>UNITCLASS_RIFLEMAN</GoodyHutUpgradeUnitClass>
 			<AdvancedStartCost>10</AdvancedStartCost>
 			<XPValueAttack>3</XPValueAttack>
