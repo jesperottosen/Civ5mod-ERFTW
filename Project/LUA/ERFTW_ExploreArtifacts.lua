@@ -76,14 +76,14 @@ end
 
 function GiveGoldenEra(pPlayer)
 	local iEras = pPlayer:GetGoldenAgeLength()
-	pPlayer:ChangeGoldenAgeTurns(iEras+25)
-	return " Golden Era"
+	pPlayer:ChangeGoldenAgeTurns(iEras+10)
+	return " 10 more Golden Era turns"
 end
 
 function GiveCulture(pPlayer)
 	local iCulture = pPlayer:GetJONSCulture()
-	pPlayer:ChangeJONSCulture(200) 
-	return " more culture"
+	pPlayer:ChangeJONSCulture(500) 
+	return " 500 more culture"
 end
 
 --------------------------------------------------------------

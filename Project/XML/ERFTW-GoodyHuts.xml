@@ -87,14 +87,13 @@
 			<Description>(ERFTW) Enhance your [ICON_CULTURE] Culture.</Description>
 			<ChooseDescription>(ERFTW) Enhance your [ICON_CULTURE] Culture</ChooseDescription>
 			<Sound>AS2D_GOODY_GOLD</Sound>
-			<Culture>100</Culture>
+			<Culture>500</Culture>
 		</Row>
 		<Row>
 			<Type>GOODY_ERFTW_GOLDENERA</Type>
 			<Description>(ERFTW) Starting a Golden Era.</Description>
 			<ChooseDescription>(ERFTW) Golden Era</ChooseDescription>
 			<Sound>AS2D_GOODY_GOLD</Sound>
-			<Culture>100</Culture>
 		</Row>
 	</GoodyHuts>
 </GameData>
