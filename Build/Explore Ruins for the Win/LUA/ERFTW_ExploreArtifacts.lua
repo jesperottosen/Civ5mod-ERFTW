@@ -82,8 +82,8 @@ end
 
 function GiveCulture(pPlayer)
 	local iCulture = pPlayer:GetJONSCulture()
-	pPlayer:ChangeJONSCulture(500) 
-	return " 500 more culture"
+	pPlayer:ChangeJONSCulture(250) 
+	return " 250 more culture"
 end
 
 --------------------------------------------------------------

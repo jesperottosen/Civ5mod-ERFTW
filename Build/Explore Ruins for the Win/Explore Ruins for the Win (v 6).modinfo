@@ -55,8 +55,8 @@
   </Blocks>
   <Files>
     <File md5="BFA24C2399EE99BA10D3E6270ED1C50A" import="1">Art/sv_explorer_mod.dds</File>
-    <File md5="BBAFDB9DADDBFA0C6CAED22778E2BC78" import="0">LUA/ERFTW_ExploreArtifacts.lua</File>
-    <File md5="366450BA67E97446EDED67AF16F6C8B3" import="0">XML/ERFTW-GoodyHuts.xml</File>
+    <File md5="50C93B7971066BBEEEB5AA6C00805A7D" import="0">LUA/ERFTW_ExploreArtifacts.lua</File>
+    <File md5="788DE3401DF2462797D693B5327DF304" import="0">XML/ERFTW-GoodyHuts.xml</File>
     <File md5="5B211AFB834397BE8F5D3781F3682C49" import="0">XML/ERFTW-HandicapInfo.xml</File>
     <File md5="A76D53D26C311E3DE0B8E605E4262D05" import="0">XML/ERFTW-RemoveGameTextInfos.xml</File>
     <File md5="F74376C330C1BFD1E57D55028E6A62D3" import="0">XML/ERFTW-RemoveArchaeologists.xml</File>

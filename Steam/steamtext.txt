@@ -9,11 +9,11 @@ Explore Ruins for the Win (ERFTW) is about exploring the map and capturing the b
 Options are:
 - Settler 
 - Scout (Goody only)
-- Tech boost (Antiquity only)
+- Tech boost 
 - 500 gold
-- 200 Culture (Goody only)
+- 250 Culture 
 - Expanded map reveal (Goody only)
-- Experience boost (Antiquity only)
+- Experience boost
 - Unit upgrades
 
 It includes:
